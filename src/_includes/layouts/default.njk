@@ -50,6 +50,17 @@
 
         <script>document.documentElement.classList.remove('no-js');</script>
 
+        <!-- Mouseflow -->
+        <script type="text/javascript">
+            window._mfq = window._mfq || [];
+            (function() {
+                var mf = document.createElement("script");
+                mf.type = "text/javascript"; mf.defer = true;
+                mf.src = "//cdn.mouseflow.com/projects/1eb399a0-d620-4353-9bf4-8964ea87e48f.js";
+                document.getElementsByTagName("head")[0].appendChild(mf);
+            })();
+        </script>
+
         {{ site.codeinjection_head | safe if site.codeinjection_head }}
         {{ codeinjection_head | safe if codeinjection_head }}
     </head>
